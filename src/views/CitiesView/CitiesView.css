@@ -1,0 +1,84 @@
+.cities-view {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.cities-view__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1.5rem;
+}
+
+.cities-view__map-section {
+  margin-top: 2rem;
+}
+
+.cities-view__map-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.cities-view__map-selectors {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.cities-view__map-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex: 1;
+  min-width: 180px;
+}
+
+.cities-view__map-selector label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.cities-view__map-selector select {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  color: #111827;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.cities-view__map-selector select:focus {
+  outline: none;
+  border-color: #1a73e8;
+  box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
+}
+
+.cities-view__search-btn {
+  display: block;
+  width: 100%;
+  padding: 0.625rem 1rem;
+  margin-bottom: 1rem;
+  background-color: #1a73e8;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.cities-view__search-btn:hover {
+  background-color: #1558b0;
+}
+
+.cities-view__search-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.4);
+}

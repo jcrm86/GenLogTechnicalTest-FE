@@ -1,0 +1,17 @@
+Prompt 1:
+under services folder create a new service that makes http calls to a backend server:
+1. create a function that calls this endpoint http://127.0.0.1:8000/cities GET and returns a json list with id | name structure.
+2. create a function that receives two parameters (origin, destination) and calls this endpoint http://127.0.0.1:8000/trucks/{origin}/{destination} GET and returns a json format with transport_company | trucks_per_day
+
+---
+
+Prompt 2:
+apply this changes:
+1. select id:origin and id:destination, input value data coming from citiesService-> getCities() method, and take as set value the name.
+2. for CitiesTable component send as input the result from clientService -> getTruck(origin, destination) method.
+3. in CitiesTable component change name to transport_company and numberOfTrucks to trucks_per_day.
+
+---
+
+Prompt 3:
+extract the prompts wrote in a txt file

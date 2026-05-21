@@ -1,0 +1,20 @@
+.cities-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cities-form__filters {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cities-form__filters .dropdown {
+  flex: 1;
+  min-width: 200px;
+}
+
+.cities-form__table {
+  width: 100%;
+}

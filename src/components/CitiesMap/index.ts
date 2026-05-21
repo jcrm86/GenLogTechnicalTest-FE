@@ -1,0 +1,1 @@
+export { CitiesMap } from './CitiesMap';

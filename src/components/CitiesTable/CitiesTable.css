@@ -1,0 +1,38 @@
+.cities-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.cities-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.cities-table thead tr {
+  background: #f9fafb;
+}
+
+.cities-table th {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #374151;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.cities-table td {
+  padding: 0.75rem 1rem;
+  color: #1f2937;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.cities-table tbody tr:hover {
+  background: #f3f4f6;
+}
+
+.cities-table__empty {
+  text-align: center;
+  color: #9ca3af;
+  padding: 1.5rem;
+}
