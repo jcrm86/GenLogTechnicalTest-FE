@@ -36,7 +36,7 @@ export function GeneralTable({ rows, columns, headers }: GeneralTableProps) {
               <tr key={index}>
                 {columns.map((col) => (
                   <td key={col}>
-                    {(row as Record<string, unknown>)[col] as string}
+                    {(row as unknown as Record<string, unknown>)[col] as string}
                   </td>
                 ))}
               </tr>
