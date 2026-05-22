@@ -1,0 +1,146 @@
+# Prompts Used for This Project
+
+## 1
+> create a file called used_prompts with all prompts used for this project
+
+## 2
+> configure a new reactjs application on this folder.
+
+## 3
+> configure this project to have two layers:
+> 1. service layer to configure endpoints to make requests
+> 2. layer that contains different components.
+
+## 4
+> create two components:
+> 1. create a component that receives a list of elements and it shows the elements as a dropdown list and it allows to filter when typing, the filter should be a frontend filter. Call this component dropdownlist.
+> 2. create a component that receives a list of elements and it prints the elements in a table. Columns in the table should show, first column Name, second column Number of trucks. Component name CitiesTable.
+> 3. create a form component that contains, two dropdownlist components one after the other, and one CitiesTable component under the two dropdownlist components. Name CitiesForm component
+> 4. create a view folder that will contains the views of the application
+> 5. In the views folder create a new function named CitiesView that will contain the CitiesForm component, make this the main page of the application
+
+## 5
+> add to used_prompts file all prompts from this session
+
+## 6
+> give me the following information:
+> 1. give the steps to integrate a google maps component into the CitiesView application.
+> 2. look for an API url in google maps where I can send two cities and it returns at least three routes to that trajectory
+
+## 7
+> apply these changes
+
+## 8
+> fix this error: Google Maps JavaScript API error: InvalidKeyMapError
+
+## 9
+> from this file extract just the routes with time and distance
+
+## 10
+> from this json file, extract the distance of each of the
+> "routes" -> legs -> distance and
+> "routes" -> legs -> duration
+
+## 11
+> create a service under services folder that has the following conditions.
+> 1. Has two input parameters as strings with names destinations and origin.
+> 2. it makes a call to this API https://maps.googleapis.com/maps/api/directions/json?origin=New+York,NY&destination=Chicago,IL&alternatives=true&key=VITE_GOOGLE_MAPS_API_KEY.
+> 3. process a json file like the one on Untitled-1 and returns a list of routes with their distance and duration, according to this schema:
+> "routes" -> legs -> distance and
+> "routes" -> legs -> duration
+
+## 12
+> add to used_prompts file all prompts from this session
+
+## 13
+> give the steps to get a new Google Maps Key
+
+## 14
+> add to used_prompts file all prompts from this session
+
+## 15
+> apply next tasks:
+> 1. Remove Region and Status dropdownlist components from form.
+> 2. Move CitiesTable component under CitisMap component.
+> 3. Remove Cities title.
+> 4. Change "Route between cities" with initial capital letters and h2 title
+
+## 16
+> on CitiesView, apply this changes:
+> 1. remove onChange from selects.
+> 2. Add a button with title "Search" vefore CitiesMap component with the same size as the the div from the map.
+> 3. Search button must take origin and destination from selects and passed to CitiesMap.
+
+## 17
+> replace the selects and use the DropDownlist components
+
+## 18
+> apply following changes to CitiesTable component:
+> 1. Change name to GeneralTable component.
+> 2. allow to handle two type of lists:
+> - cities -> column 1: transport_company | column 2: trucks_per_day
+> - directions -> column 1: summary | column 2: distance | column 3: duration.
+> 3. allow to introduce a list of titles for each column
+
+## 19
+> add a GeneralTable component in CitiesView with directionRows after CitiesMap
+
+## 20
+> show me the result from directionsService when making a query from New York to Washington DC
+
+## 21
+> explain me this error
+
+## 22
+> apply first option
+
+## 23
+> add to used_prompts file all prompts from this session
+
+## 24
+> under services folder create a new service that makes http calls to a backend server:
+> 1. create a function that calls this endpoint http://127.0.0.1:8000/cities GET and returns a json list with id | name structure.
+> 2. create a function that receives two parameters (origin, destination) and calls this endpoint http://127.0.0.1:8000/trucks/{origin}/{destination} GET and returns a json format with transport_company | trucks_per_day
+
+## 25
+> apply this changes:
+> 1. select id:origin and id:destination, input value data coming from citiesService-> getCities() method, and take as set value the name.
+> 2. for CitiesTable component send as input the result from clientService -> getTruck(origin, destination) method.
+> 3. in CitiesTable component change name to transport_company and numberOfTrucks to trucks_per_day.
+
+## 26
+> extract the prompts wrote in a txt file
+
+## 27
+> create a file with all prompts from this session
+
+## 28
+> add to used_prompts file all prompts from this session
+
+## 29
+> fix this error:
+> src/components/GeneralTable/GeneralTable.tsx(39,23): error TS2352: Conversion of type 'TableRow' to type 'Record<string, unknown>' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+>   Type 'DirectionRow' is not comparable to type 'Record<string, unknown>'.
+>     Index signature for type 'string' is missing in type 'DirectionRow'.
+
+## 30
+> change the http://127.0.0.1:8000 to the environment variable VITE_API_BASE_URL
+
+## 31
+> railway is using this url https://genlogtechnicaltest-fe-production.up.railway.app/undefined/cities but it should use this https://genlogtechnicaltest-be-production.up.railway.app/cities whats the error
+
+## 32
+> remove following files
+> exampleService, ExampleList component
+
+## 33
+> I am getting this error "For development purposes only" when deploying google maps in railway. fix it
+
+## 34
+> create a file and name used_prompts and extract all prompts generated for this project
+
+## 35
+> create a new used_prompts2.txt file
+
+## 36
+> merge used_prompts.txt and used_prompts2.txt files into one and remove used_prompts2.txt file
