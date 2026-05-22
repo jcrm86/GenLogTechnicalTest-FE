@@ -1,4 +1,3 @@
-export { ExampleList } from './ExampleList';
 export { DropdownList } from './DropdownList';
 export type { DropdownOption } from './DropdownList';
 export { GeneralTable } from './GeneralTable';

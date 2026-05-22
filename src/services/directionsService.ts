@@ -23,7 +23,7 @@ interface DirectionsResponse {
 
 export const directionsService = {
   getRoutes: async (origin: string, destination: string): Promise<RouteResult[]> => {
-    const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY as string;
+    const apiKey = "AIzaSyAOCo6xQuQZvvg55HFrUlFALaDp218KdxE";
 
     const params = new URLSearchParams({
       origin,
